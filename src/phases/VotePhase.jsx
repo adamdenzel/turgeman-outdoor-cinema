@@ -23,7 +23,7 @@ import { F } from '../design'
 
 // ─── Single sortable vote card ────────────────────────────────────────────────
 function VoteCard({ sug, index, onInfo }) {
-  const { C } = useTheme()
+  const { C, isDark } = useTheme()
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
     useSortable({ id: sug.id })
 

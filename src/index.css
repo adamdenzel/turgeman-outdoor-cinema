@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #0b0b18;
+  color: #ededef;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+
+/* Remove iOS tap highlight */
+* { -webkit-tap-highlight-color: transparent; }
+
+/* Input reset */
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+input[type="date"],
+input[type="datetime-local"] {
+  color-scheme: dark;
+}
+
+/* Header top padding — tighter on mobile */
+.header-top { padding-top: 44px; }
+@media (max-width: 640px) {
+  .header-top { padding-top: 32px; }
+}

@@ -7,7 +7,7 @@ function CinemaLogo() {
     <img
       src={isDark ? '/outdoor-cinema-logo-dark.svg' : '/outdoor-cinema-logo-light.svg'}
       alt="Turgeman Outdoor Cinema"
-      style={{ display: 'block', margin: '0 auto', width: 90, height: 'auto' }}
+      style={{ display: 'block', margin: '0 auto', height: 90, width: 'auto' }}
     />
   )
 }

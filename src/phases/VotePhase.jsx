@@ -41,7 +41,7 @@ function VoteCard({ sug, index, onInfo }) {
 
   const bgColors = [C.top1Bg, C.top2Bg, C.top3Bg]
   const rankColor = index < 3
-    ? (isDark ? `linear-gradient(180deg, ${C.gold} 0%, ${C.gold3} 100%)` : C.gold)
+    ? `linear-gradient(180deg, ${C.gold} 0%, ${C.gold3} 100%)`
     : C.textDim
 
   const baseTransform = CSS.Transform.toString(transform) || ''

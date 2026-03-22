@@ -133,7 +133,7 @@ export default function ResultsPhase({ results, isAdmin, onNewEvent }) {
                   }} />
                   <div style={{
                     position: 'absolute', top: 8, left: 8,
-                    background: i === 0 ? (isDark ? C.gold2 : '#d4a820') : (isDark ? C.gold3 : '#a8862a'),
+                    background: i === 0 ? C.gold2 : C.gold3,
                     color: C.bg,
                     fontFamily: F.display, fontSize: 14,
                     padding: '2px 8px', borderRadius: 6, zIndex: 2,
